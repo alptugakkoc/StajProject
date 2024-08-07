@@ -1,0 +1,129 @@
+/* Genel sayfa ayarları */
+body {
+  font-family: Arial, sans-serif; /* Sayfadaki metinler için font ailesini belirler. Arial ve sans-serif kullanılacak. */
+  display: flex; /* Sayfayı bir flex konteyneri olarak ayarlar, böylece çocuk elemanlar flex özelliklerine sahip olur. */
+  justify-content: center; /* Çocuk elemanları yatayda ortalar. */
+  align-items: flex-start; /* Çocuk elemanları dikeyde üst kısma hizalar. */
+  height: 100vh; /* Sayfanın yüksekliğini viewport yüksekliği (görünüm penceresi yüksekliği) kadar yapar. */
+  margin: 0; /* Sayfanın kenar boşluklarını sıfırlar. */
+  background-color: #f0f0f0; /* Arka plan rengini açık gri yapar. */
+  padding-top: 20px; /* Üstten 20 piksel boşluk bırakır. */
+  /* background-image: url(/src/images/chance.jpg); /* Sayfanın arka planına bir resim ekler. */
+}
+
+/* Uygulamanın ana bileşenine stil verir */
+.App {
+  text-align: center; /* İçeriği yatayda ortalar. */
+}
+
+/* Giriş ekranı konteynerine stil verir */
+.login-container {
+  background: white; /* Arka plan rengini beyaz yapar. */
+  padding: 20px; /* İçeriğin etrafında 20 piksel boşluk bırakır. */
+  border-radius: 10px; /* Köşeleri 10 piksel çapında yuvarlatır. */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti ekler. */
+}
+
+/* Giriş ekranındaki başlık için stil ayarları */
+.login-container h1 {
+  margin-bottom: 20px; /* Başlığın altına 20 piksel boşluk bırakır. */
+}
+
+/* Form grubuna stil verir */
+.form-group {
+  margin-bottom: 15px; /* Form grubunun altına 15 piksel boşluk bırakır. */
+}
+
+/* Form etiketine stil verir */
+.form-group label {
+  display: block; /* Etiketi blok olarak gösterir, böylece altındaki element yeni satıra geçer. */
+  margin-bottom: 5px; /* Etiketin altına 5 piksel boşluk bırakır. */
+}
+
+/* Form input alanlarına stil verir */
+.form-group input {
+  width: 100%; /* Input alanının genişliğini %100 yapar, yani kapsayıcı öğesinin tamamını kaplar. */
+  padding: 8px; /* Input alanının içinde 8 piksel boşluk bırakır. */
+  box-sizing: border-box; /* Genişlik ve yüksekliğe padding ve border'ı dahil eder. */
+  border: 1px solid #ccc; /* Input alanının etrafında 1 piksel kalınlığında gri bir sınır oluşturur. */
+  border-radius: 5px; /* Köşeleri 5 piksel çapında yuvarlatır. */
+}
+
+/* Login butonuna stil verir */
+button {
+  width: 100%; /* Butonun genişliğini %100 yapar. */
+  padding: 10px; /* Butonun içinde 10 piksel boşluk bırakır. */
+  border: none; /* Butonun etrafında sınır olmasını engeller. */
+  border-radius: 5px; /* Köşeleri 5 piksel çapında yuvarlatır. */
+  background-color: #0011ff; /* Arka plan rengini koyu mavi yapar. */
+  color: rgb(255, 251, 251); /* Yazı rengini açık beyaz yapar. */
+  cursor: pointer; /* Üzerine gelindiğinde imleci pointer (işaretçi) yapar. */
+  font-size: 16px; /* Yazı boyutunu 16 piksel yapar. */
+}
+
+/* Remove butonuna stil verir */
+.remove-button {
+  border: none; /* Butonun etrafında sınır olmasını engeller. */
+  font-family: Arial, Helvetica, sans-serif; /* Yazı tiplerini belirler. */
+  background-color: #0011ff; /* Arka plan rengini koyu mavi yapar. */
+  color: white; /* Yazı rengini beyaz yapar. */
+  padding: 5px 10px; /* Butonun içinde 5 piksel üst ve alt, 10 piksel sağ ve soldan boşluk bırakır. */
+  border-radius: 5px; /* Köşeleri 5 piksel çapında yuvarlatır. */
+  cursor: pointer; /* Üzerine gelindiğinde imleci pointer (işaretçi) yapar. */
+}
+
+/* Remove butonunun üzerine gelindiğinde uygulanan stil */
+.remove-button:hover {
+  background-color: #218838; /* Üzerine gelindiğinde arka plan rengini yeşil yapar. */
+}
+
+/* Genel buton üzerine gelindiğinde uygulanan stil */
+button:hover {
+  background-color: #218838; /* Üzerine gelindiğinde arka plan rengini yeşil yapar. */
+}
+
+
+
+/* Todo öğe konteynerine stil verir */
+.todo-container {
+  background: white; /* Arka plan rengini beyaz yapar. */
+  padding: 20px; /* İçeriğin etrafında 20 piksel boşluk bırakır. */
+  border-radius: 10px; /* Köşeleri 10 piksel çapında yuvarlatır. */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti ekler. */
+  max-width: 600px; /* Maksimum genişliği 600 piksel yapar. */
+  width: 100%; /* Genişliği %100 yapar, yani kapsayıcı öğesinin tamamını kaplar. */
+  margin: 0 auto; /* Ortalar. */
+}
+
+/* Todo başlığına stil verir */
+.todo-header {
+  display: flex; /* Todo başlığını flex konteyneri olarak ayarlar. */
+  justify-content: space-between; /* Başlık elemanlarını yatayda aralar. */
+  align-items: center; /* Başlık elemanlarını dikeyde ortalar. */
+  margin-bottom: 20px; /* Başlığın altına 20 piksel boşluk bırakır. */
+}
+
+/* Todo başlığındaki input alanına stil verir */
+.todo-header input {
+  flex-grow: 1; /* Input alanının genişlemesini sağlar. */
+  margin-right: 10px; /* Input alanının sağ tarafına 10 piksel boşluk bırakır. */
+}
+
+/* Tabloya stil verir */
+table {
+  width: 100%; /* Tablo genişliğini %100 yapar. */
+  border-collapse: collapse; /* Hücre kenarlıklarını birleştirir, böylece boşluk görünmez. */
+}
+
+/* Tablo başlık hücrelerine ve veri hücrelerine stil verir */
+table th, table td {
+  padding: 10px; /* Hücrelerin etrafında 10 piksel boşluk bırakır. */
+  border: 1px solid #ccc; /* Hücrelerin etrafında 1 piksel kalınlığında gri bir sınır oluşturur. */
+  text-align: left; /* Metni sola hizalar. */
+}
+
+/* Tablo başlık hücrelerine stil verir */
+table th {
+  background-color: #f0f0f0; /* Arka plan rengini açık gri yapar. */
+  font-weight: bold; /* Metni kalın yapar. */
+}
