@@ -72,7 +72,7 @@ function TodoList({ user, todos, saveTodos }) {
       todo.completed ? 'Yes' : ' No '
     ]);
     doc.autoTable(tableColumn,tableRows,{startY:20});
-    doc.text(`${user}'s Todo List`,14,15 );// backtik altgr+virgül
+    doc.text(`${user}'s Todo List`,14,15 );// 
     doc.save('todo_list.pdf'); 
   }
 
